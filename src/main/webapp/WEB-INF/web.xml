@@ -8,13 +8,52 @@
 
   <servlet>
     <servlet-name>ClinicServlet</servlet-name>
-    <servlet-class>ru.egor.webClinic.ClinicServlet</servlet-class>
+    <servlet-class>ru.egor.webClinic.servlets.ClinicServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
     <servlet-name>ClinicServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserViewServlet</servlet-name>
+    <servlet-class>ru.egor.webClinic.servlets.UserViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserViewServlet</servlet-name>
+    <url-pattern>/user/view</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserCreateServlet</servlet-name>
+    <servlet-class>ru.egor.webClinic.servlets.UserCreateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserCreateServlet</servlet-name>
+    <url-pattern>/user/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserEditServlet</servlet-name>
+    <servlet-class>ru.egor.webClinic.servlets.UserEditServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>UserEditServlet</servlet-name>
+    <url-pattern>/user/edit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>ru.egor.webClinic.servlets.UserDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/user/delete</url-pattern>
+  </servlet-mapping>
 
 </web-app>

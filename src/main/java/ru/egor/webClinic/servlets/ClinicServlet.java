@@ -1,7 +1,8 @@
-package ru.egor.webClinic;
+package ru.egor.webClinic.servlets;
 
 
 
+import ru.egor.clinic.Client;
 import ru.egor.clinic.Dog;
 import ru.egor.clinic.Pet;
 
@@ -18,6 +19,7 @@ public class ClinicServlet extends HttpServlet {
 
     final List<Pet> pets = new CopyOnWriteArrayList<Pet>();
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
@@ -33,7 +35,7 @@ public class ClinicServlet extends HttpServlet {
                         "         Name : <input type='text' name='name'>"+
                         "         <input type='submit' value='Submit'>"+
                         "     <form>"+
-                        this.viewPets() +
+                        this.viewClient() +
                         "</body>" +
                         "</html>"
         );
@@ -46,9 +48,10 @@ public class ClinicServlet extends HttpServlet {
         doGet(req, resp);
     }
 
-    private String viewPets() {
+
+    private String viewClient() {
         StringBuilder sb = new StringBuilder();
-        sb.append("<p>Pets</p>");
+        sb.append("<p>Client</p>");
         sb.append("<table style='border : 1px solid black'>");
         for (Pet pet : this.pets) {
             sb.append("<tr><td style='border : 1px solid black'>").append(pet.getName()).append("</td></tr>");
