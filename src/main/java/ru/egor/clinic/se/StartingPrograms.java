@@ -1,8 +1,6 @@
-package ru.egor.clinic;
+package ru.egor.clinic.se;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class StartingPrograms {
     public static void main(String[] args) throws UserUncorrectedException, IOException {

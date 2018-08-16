@@ -1,7 +1,7 @@
 package ru.egor.webClinic.servlets;
 
-import ru.egor.clinic.Dog;
-import ru.egor.clinic.Pet;
+import ru.egor.clinic.se.Dog;
+import ru.egor.clinic.se.Pet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

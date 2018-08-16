@@ -56,4 +56,10 @@
     <url-pattern>/user/delete</url-pattern>
   </servlet-mapping>
 
+  <welcome-file-list>
+    <welcome-file>/user/view</welcome-file>
+    <welcome-file>/user/edit</welcome-file>
+    <welcome-file>/user/delete</welcome-file>
+  </welcome-file-list>
+
 </web-app>

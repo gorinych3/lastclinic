@@ -1,4 +1,4 @@
-package ru.egor.clinic;
+package ru.egor.clinic.se;
 
 import java.util.Objects;
 

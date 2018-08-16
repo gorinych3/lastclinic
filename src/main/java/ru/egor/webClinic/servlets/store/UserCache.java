@@ -1,6 +1,6 @@
 package ru.egor.webClinic.servlets.store;
 
-import ru.egor.clinic.User;
+import ru.egor.clinic.se.User;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
