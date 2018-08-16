@@ -1,11 +1,7 @@
 package ru.egor.webClinic.servlets;
 
-
-
-import ru.egor.clinic.Client;
 import ru.egor.clinic.Dog;
 import ru.egor.clinic.Pet;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +14,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ClinicServlet extends HttpServlet {
 
     final List<Pet> pets = new CopyOnWriteArrayList<Pet>();
-
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -47,7 +42,6 @@ public class ClinicServlet extends HttpServlet {
         this.pets.add(new Dog(req.getParameter("name")));
         doGet(req, resp);
     }
-
 
     private String viewClient() {
         StringBuilder sb = new StringBuilder();

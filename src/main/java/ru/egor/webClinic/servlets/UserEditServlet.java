@@ -2,7 +2,6 @@ package ru.egor.webClinic.servlets;
 
 import ru.egor.clinic.User;
 import ru.egor.webClinic.servlets.store.UserCache;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
