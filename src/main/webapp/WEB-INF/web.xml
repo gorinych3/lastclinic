@@ -55,6 +55,16 @@
     <servlet-name>UserDeleteServlet</servlet-name>
     <url-pattern>/user/delete</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateUserJsonServlet</servlet-name>
+    <servlet-class>ru.egor.webClinic.servlets.CreateUserJsonServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateUserJsonServlet</servlet-name>
+    <url-pattern>/user/json</url-pattern>
+  </servlet-mapping>
 
   <welcome-file-list>
     <welcome-file>/user/view</welcome-file>
